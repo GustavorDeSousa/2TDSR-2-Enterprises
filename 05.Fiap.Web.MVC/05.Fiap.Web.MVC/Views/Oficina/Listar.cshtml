@@ -1,0 +1,23 @@
+﻿@model List<_05.Fiap.Web.MVC.Models.Oficina>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Dia e Noite</th>
+        <th>Endereço</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.DiaNoite</td>
+            <td>@item.Endereco</td>
+        </tr>
+    }
+</table>

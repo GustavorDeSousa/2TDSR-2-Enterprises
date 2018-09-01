@@ -1,0 +1,28 @@
+﻿@model List<_04.Fiap.Web.MVC.Models.Comida>
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Calorias</th>
+        <th>Preço</th>
+        <th>Descrição</th>
+        <th>Salgado</th>
+        <th>Vegetariano</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.Calorias</td>
+            <td>@item.Preco</td>
+            <td>@item.Descricao</td>
+            <td>@item.Salgado</td>
+            <td>@item.Vegetariano</td>
+        </tr>
+    }
+</table>

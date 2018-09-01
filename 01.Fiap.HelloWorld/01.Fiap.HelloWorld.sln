@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Fiap.HelloWorld.UI", "01.Fiap.HelloWorld.UI\01.Fiap.HelloWorld.UI.csproj", "{53851CC6-F15C-4117-A155-5CF51B8015C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Exercicio.UI", "Fiap.Exercicio.UI\Fiap.Exercicio.UI.csproj", "{B6F477FF-6DE5-420D-A441-3740020842A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53851CC6-F15C-4117-A155-5CF51B8015C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53851CC6-F15C-4117-A155-5CF51B8015C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53851CC6-F15C-4117-A155-5CF51B8015C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53851CC6-F15C-4117-A155-5CF51B8015C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F477FF-6DE5-420D-A441-3740020842A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F477FF-6DE5-420D-A441-3740020842A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F477FF-6DE5-420D-A441-3740020842A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F477FF-6DE5-420D-A441-3740020842A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28D9F4D6-B28C-4209-B8BD-5193A3F97A8E}
+	EndGlobalSection
+EndGlobal

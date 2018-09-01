@@ -1,0 +1,26 @@
+﻿@model Fiap06.Web.MVC.Models.Bebida
+
+@{
+    ViewBag.Title = "Atualizar";
+}
+
+<h2>Atualizar Bebida</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(b => b.BebidaId)
+    <div class="form-group">
+        @Html.LabelFor(b => b.Nome)
+        @Html.TextBoxFor(b => b.Nome, new { @class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(b => b.Preco)
+        @Html.TextBoxFor(b => b.Preco, new { @class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.CheckBoxFor(b => b.Destilado)
+        @Html.LabelFor(b => b.Destilado)
+    </div>
+    <input type="submit" value="Editar" class="btn btn-primary" />
+}
+

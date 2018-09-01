@@ -1,0 +1,43 @@
+﻿@model _04.Fiap.Web.MVC.Models.Comida
+
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar</h2>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(churros => churros.Nome)
+        @Html.TextBoxFor(c => c.Nome)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(c => c.Preco)
+        @Html.TextBoxFor(c => c.Preco)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(c => c.Calorias)
+        @Html.TextBoxFor(c => c.Calorias)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(c => c.Descricao)
+        @Html.TextAreaFor(c => c.Descricao)
+    </div>
+    <div class="form-group">
+        @Html.CheckBoxFor(c => c.Salgado)
+        @Html.LabelFor(c => c.Salgado)
+    </div>
+    <div class="form-group">
+        @Html.CheckBoxFor(c => c.Vegetariano)
+        @Html.LabelFor(c => c.Vegetariano)
+    </div>
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+}

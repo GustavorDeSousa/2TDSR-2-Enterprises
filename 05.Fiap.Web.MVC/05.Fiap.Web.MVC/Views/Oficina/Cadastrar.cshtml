@@ -1,0 +1,37 @@
+﻿@model _05.Fiap.Web.MVC.Models.Oficina
+
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar</h2>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(f => f.Nome)
+        @Html.TextBoxFor(f => f.Nome, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.CheckBoxFor(f => f.DiaNoite)
+        @Html.LabelFor(f => f.DiaNoite)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(f => f.Endereco)
+        @Html.TextAreaFor(f => f.Endereco, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(qualquercoisa => qualquercoisa.Tipo)
+        @Html.DropDownListFor(l => l.Tipo,
+                    ViewBag.listaTipo as SelectList, 
+                    "Selecione", new { @class = "form-control" })
+    </div>
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+}
